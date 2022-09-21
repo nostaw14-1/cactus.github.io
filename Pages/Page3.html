@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="../site.webmanifest">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cactus website</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <script>
+		let slideIndex = [1,1,1,1,1];
+let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+showSlides(1, 4);
+		
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+	</script>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" id="logo"> <span>CACTUS&nbsp;</span></a>
+        <ul class="navbar">
+            <li><a href="../index.html">Home&nbsp;</a></li>
+			<li><a href="Page2.html">Clothes&nbsp;</a></li>
+			<li><a href="Page3.html">Shoes&nbsp;</a></li>
+			<li><a href="AboutMe.html">About&nbsp;</a></li>
+		</ul>
+	</header>
+	<div class="image1"><img src="../Media/Untitled_Artwork 97.png" width="100%"></div>
+	<div class="gridContainer">
+		<div class="separator"></div>
+		<div class="item1">
+			<div class="slideshow-container">
+  <div class="mySlides1" style="display:block">
+    <img src="../Media/Untitled_Artwork 16.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="../Media/Untitled_Artwork 34.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="../Media/Untitled_Artwork 35.png" style="width:100%">
+  </div>
+				<div class="mySlides1">
+    <img src="../Media/Untitled_Artwork 36.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+			</div>
+			<p class="captext">"SK8 1" Sneaker</p>
+		</div>
+		<div class="item2">
+			<div class="slideshow-container">
+  <div class="mySlides2" style="display:block">
+    <img src="../Media/Untitled_Artwork 5.png" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="../Media/Untitled_Artwork 4.png" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="../Media/Untitled_Artwork 2.png" style="width:100%">
+  </div>
+				<div class="mySlides2">
+    <img src="../Media/Untitled_Artwork 3.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+			</div>
+			<p class="captext">"SK8 2" Sneaker</p>
+			</div>
+		<div class="item3">		<div class="slideshow-container">
+  <div class="mySlides3" style="display:block">
+    <img src="../Media/Untitled_Artwork 45.png" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="../Media/Untitled_Artwork 44.png" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="../Media/Untitled_Artwork 42.png" style="width:100%">
+  </div>
+				<div class="mySlides3">
+    <img src="../Media/Untitled_Artwork 43.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+			</div>
+			<p class="captext">"Sky Walker" Sneaker</p></div>
+		<div class="item4">		<div class="slideshow-container">
+  <div class="mySlides4" style="display:block">
+    <img src="../Media/Untitled_Artwork 46.png" style="width:100%">
+  </div>
+
+  <div class="mySlides4">
+    <img src="../Media/Untitled_Artwork 48.png" style="width:100%">
+  </div>
+
+  <div class="mySlides4">
+    <img src="../Media/Untitled_Artwork 47.png" style="width:100%">
+  </div>
+				<div class="mySlides4">
+    <img src="../Media/Untitled_Artwork 49.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+			</div>
+			<p class="captext">"Classic" Sneaker</p></div>
+		<div class="item5">		<div class="slideshow-container">
+  <div class="mySlides5" style="display:block">
+    <img src="../Media/Untitled_Artwork 40.png" style="width:100%">
+  </div>
+
+  <div class="mySlides5">
+    <img src="../Media/Untitled_Artwork 41.png" style="width:100%">
+  </div>
+
+  <div class="mySlides5">
+    <img src="../Media/Untitled_Artwork 39.png" style="width:100%">
+  </div>
+				<div class="mySlides5">
+    <img src="../Media/Untitled_Artwork 38.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+			</div>
+			<p class="captext">"Moon Walker" Sneaker</p></div>
+	</div>
+</body>
+</html>
+
